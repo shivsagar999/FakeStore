@@ -13,6 +13,7 @@
 		841452F829E5CF08006F4E2D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841452F729E5CF08006F4E2D /* Preview Assets.xcassets */; };
 		841452FA29E5CF08006F4E2D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841452F929E5CF08006F4E2D /* Persistence.swift */; };
 		841452FD29E5CF08006F4E2D /* FakeStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 841452FB29E5CF08006F4E2D /* FakeStore.xcdatamodeld */; };
+		84947D6D29E5D61700052CF0 /* FSNetworkStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84947D6C29E5D61600052CF0 /* FSNetworkStatus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		841452F729E5CF08006F4E2D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		841452F929E5CF08006F4E2D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		841452FC29E5CF08006F4E2D /* FakeStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FakeStore.xcdatamodel; sourceTree = "<group>"; };
+		84947D6C29E5D61600052CF0 /* FSNetworkStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSNetworkStatus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				841452F929E5CF08006F4E2D /* Persistence.swift */,
 				841452FB29E5CF08006F4E2D /* FakeStore.xcdatamodeld */,
 				841452F629E5CF08006F4E2D /* Preview Content */,
+				84947D6C29E5D61600052CF0 /* FSNetworkStatus.swift */,
 			);
 			path = FakeStore;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			files = (
 				841452FA29E5CF08006F4E2D /* Persistence.swift in Sources */,
 				841452F329E5CF07006F4E2D /* ContentView.swift in Sources */,
+				84947D6D29E5D61700052CF0 /* FSNetworkStatus.swift in Sources */,
 				841452FD29E5CF08006F4E2D /* FakeStore.xcdatamodeld in Sources */,
 				841452F129E5CF07006F4E2D /* FakeStoreApp.swift in Sources */,
 			);
