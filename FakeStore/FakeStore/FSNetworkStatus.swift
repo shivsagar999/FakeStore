@@ -10,7 +10,7 @@ import Network
 
 class FSNetworkStatus {
     
-    let shared = FSNetworkStatus()
+    static let shared = FSNetworkStatus()
     
     var monitor: NWPathMonitor?
     var isMonitoring: Bool = false
@@ -23,6 +23,13 @@ class FSNetworkStatus {
     var networkStatusChangeHandler: ((Bool) -> ())?
     
     private init() { }
+    
+    func initiateNetworkStatusHandler(completionHandler: @escaping (Bool) -> ()) {
+        startMonitoring()
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1)) {
+            completionHandler(self.isConnected)
+        }
+    }
     
     func startMonitoring() {
         if isMonitoring {

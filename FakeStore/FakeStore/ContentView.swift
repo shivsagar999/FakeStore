@@ -10,26 +10,48 @@ import CoreData
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
-
+    
+    @State private var noNetworkScreen: Bool = false
+    @State private var storeScreen: Bool = false
+    
     var body: some View {
-        Text("TYifuyrd")
-    }
-
-    private func addItem() {
+        Text("FakeStore")
+            .foregroundColor(.orange)
+            .font(
+                    .custom(
+                    "AmericanTypewriter",
+                    fixedSize: 34)
+                    .weight(.bold)
+                )
+            .sheet(isPresented: $noNetworkScreen) {
+                
+            }
+            .sheet(isPresented: $storeScreen) {
+                
+            }
+            .onAppear {
+                checkForNetwork()
+            }
+        
         
     }
 
-    private func deleteItems(offsets: IndexSet) {
-        
+    func checkForNetwork() {
+        FSNetworkStatus.shared.initiateNetworkStatusHandler { isConnected in
+            if isConnected {
+                storeScreen.toggle()
+            } else {
+                FSNetworkStatus.shared.networkStatusChangeHandler = { isConnected in
+                    if isConnected {
+                        storeScreen.toggle()
+                    }
+                    
+                }
+                noNetworkScreen.toggle()
+            }
+        }
     }
 }
-
-private let itemFormatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.dateStyle = .short
-    formatter.timeStyle = .medium
-    return formatter
-}()
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
