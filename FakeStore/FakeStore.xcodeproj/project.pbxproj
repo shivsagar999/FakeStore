@@ -14,6 +14,7 @@
 		841452FA29E5CF08006F4E2D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841452F929E5CF08006F4E2D /* Persistence.swift */; };
 		841452FD29E5CF08006F4E2D /* FakeStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 841452FB29E5CF08006F4E2D /* FakeStore.xcdatamodeld */; };
 		84947D6D29E5D61700052CF0 /* FSNetworkStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84947D6C29E5D61600052CF0 /* FSNetworkStatus.swift */; };
+		84BF686E29E7282500C5CCD4 /* NoNetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BF686D29E7282500C5CCD4 /* NoNetworkView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		841452F929E5CF08006F4E2D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		841452FC29E5CF08006F4E2D /* FakeStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FakeStore.xcdatamodel; sourceTree = "<group>"; };
 		84947D6C29E5D61600052CF0 /* FSNetworkStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSNetworkStatus.swift; sourceTree = "<group>"; };
+		84BF686D29E7282500C5CCD4 /* NoNetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoNetworkView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				841452FB29E5CF08006F4E2D /* FakeStore.xcdatamodeld */,
 				841452F629E5CF08006F4E2D /* Preview Content */,
 				84947D6C29E5D61600052CF0 /* FSNetworkStatus.swift */,
+				84BF686D29E7282500C5CCD4 /* NoNetworkView.swift */,
 			);
 			path = FakeStore;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 			files = (
 				841452FA29E5CF08006F4E2D /* Persistence.swift in Sources */,
 				841452F329E5CF07006F4E2D /* ContentView.swift in Sources */,
+				84BF686E29E7282500C5CCD4 /* NoNetworkView.swift in Sources */,
 				84947D6D29E5D61700052CF0 /* FSNetworkStatus.swift in Sources */,
 				841452FD29E5CF08006F4E2D /* FakeStore.xcdatamodeld in Sources */,
 				841452F129E5CF07006F4E2D /* FakeStoreApp.swift in Sources */,
