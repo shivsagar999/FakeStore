@@ -14,6 +14,7 @@ struct ContentView: View {
     @State private var noNetworkScreen: Bool = false
     @State private var storeScreen: Bool = false
     
+    
     var body: some View {
         Text("FakeStore")
             .foregroundColor(.orange)
@@ -27,7 +28,7 @@ struct ContentView: View {
                 NoNetworkView()
             }
             .fullScreenCover(isPresented: $storeScreen) {
-                
+                StoreView()
             }
             .onAppear {
                 checkForNetwork()

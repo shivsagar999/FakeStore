@@ -69,14 +69,13 @@
 			children = (
 				841452F029E5CF07006F4E2D /* FakeStoreApp.swift */,
 				841452F229E5CF07006F4E2D /* ContentView.swift */,
+				84AA03AF29E9B94E00B5E6A1 /* Store View */,
 				841452F429E5CF08006F4E2D /* Assets.xcassets */,
 				841452F929E5CF08006F4E2D /* Persistence.swift */,
 				841452FB29E5CF08006F4E2D /* FakeStore.xcdatamodeld */,
 				841452F629E5CF08006F4E2D /* Preview Content */,
 				84947D6C29E5D61600052CF0 /* FSNetworkStatus.swift */,
 				84BF686D29E7282500C5CCD4 /* NoNetworkView.swift */,
-				84A0355029E95A29000B14D1 /* StoreView.swift */,
-				84A0355229E95FBC000B14D1 /* StoreViewModel.swift */,
 				84A0355429E961C0000B14D1 /* Product.swift */,
 				84A0355629E96759000B14D1 /* NetworkManager.swift */,
 			);
@@ -89,6 +88,15 @@
 				841452F729E5CF08006F4E2D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		84AA03AF29E9B94E00B5E6A1 /* Store View */ = {
+			isa = PBXGroup;
+			children = (
+				84A0355029E95A29000B14D1 /* StoreView.swift */,
+				84A0355229E95FBC000B14D1 /* StoreViewModel.swift */,
+			);
+			path = "Store View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

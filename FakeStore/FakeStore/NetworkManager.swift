@@ -26,13 +26,7 @@ public enum HTTPMethod: String {
     case patch = "PATCH"
 }
 
-class NetworkManager<T> {
-    
-    public var session: T
-    
-    init(session: T) {
-        self.session = session
-    }
+class NetworkManager {
     
     
     func fetch(url: URL, method: HTTPMethod, headers: [String : String] = [:], token: String? = nil, data: [String: Any]? = nil) async throws -> [Product] {
