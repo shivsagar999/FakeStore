@@ -23,10 +23,10 @@ struct ContentView: View {
                     fixedSize: 34)
                     .weight(.bold)
                 )
-            .sheet(isPresented: $noNetworkScreen) {
-                
+            .fullScreenCover(isPresented: $noNetworkScreen) {
+                NoNetworkView()
             }
-            .sheet(isPresented: $storeScreen) {
+            .fullScreenCover(isPresented: $storeScreen) {
                 
             }
             .onAppear {
