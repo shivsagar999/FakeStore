@@ -61,7 +61,7 @@ class NetworkManager {
     func login(url: URL, method: HTTPMethod, headers: [String : String] = [:], body: [String: Any]? = nil) async throws -> Token {
         var request = URLRequest(url: url)
         request.httpMethod = method.rawValue
-        request.allHTTPHeaderFields = headers
+        request.allHTTPHeaderFields = ["Content-Type": "application/json"]
         
         if let data = body {
             var serializedData: Data?
@@ -110,7 +110,7 @@ class NetworkManager {
                     }
                     request.httpBody = serializedData
                 }
-        
+        print(request.url)
         let (data, response) = try await URLSession.shared.data(for: request)
         
         //Check if response is valid

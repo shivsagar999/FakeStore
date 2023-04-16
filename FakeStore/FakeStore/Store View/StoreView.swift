@@ -42,9 +42,9 @@ struct StoreView: View {
             .onAppear() {
                 Task {
                     await storeVM.LoadStoreData()
-                    print("Done")
+                    
                 }
-                print("Next")
+                
             }
         }
     }
