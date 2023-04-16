@@ -12,7 +12,7 @@ struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
     
     @State private var noNetworkScreen: Bool = false
-    @State private var storeScreen: Bool = false
+    @State private var loginScreen: Bool = false
     
     
     var body: some View {
@@ -27,8 +27,8 @@ struct ContentView: View {
             .fullScreenCover(isPresented: $noNetworkScreen) {
                 NoNetworkView()
             }
-            .fullScreenCover(isPresented: $storeScreen) {
-                StoreView()
+            .fullScreenCover(isPresented: $loginScreen) {
+                LoginView()
             }
             .onAppear {
                 checkForNetwork()
@@ -40,11 +40,11 @@ struct ContentView: View {
     func checkForNetwork() {
         FSNetworkStatus.shared.initiateNetworkStatusHandler { isConnected in
             if isConnected {
-                storeScreen.toggle()
+                loginScreen.toggle()
             } else {
                 FSNetworkStatus.shared.networkStatusChangeHandler = { isConnected in
                     if isConnected {
-                        storeScreen.toggle()
+                        loginScreen.toggle()
                     }
                     
                 }

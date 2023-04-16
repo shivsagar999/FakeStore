@@ -15,7 +15,7 @@ class StoreViewModel: ObservableObject {
     
     func LoadStoreData() async {
         do {
-            Data = try await networkManager.fetch(url: URL(string: "https://fakestoreapi.com/products")! , method: .get)
+            Data = try await networkManager.fetchAllProducts(url: URL(string: "https://fakestoreapi.com/products")! , method: .get)
         } catch {
             print(error)
         }

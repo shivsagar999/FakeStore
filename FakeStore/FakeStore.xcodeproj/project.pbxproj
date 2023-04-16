@@ -19,6 +19,9 @@
 		84A0355529E961C0000B14D1 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0355429E961C0000B14D1 /* Product.swift */; };
 		84A0355729E96759000B14D1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0355629E96759000B14D1 /* NetworkManager.swift */; };
 		84BF686E29E7282500C5CCD4 /* NoNetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BF686D29E7282500C5CCD4 /* NoNetworkView.swift */; };
+		84C633A029EAC1C3001177EA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C6339F29EAC1C3001177EA /* LoginView.swift */; };
+		84C633A229EAE5A6001177EA /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C633A129EAE5A6001177EA /* LoginViewModel.swift */; };
+		84C633A429EAFB2D001177EA /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C633A329EAFB2D001177EA /* Token.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		84A0355429E961C0000B14D1 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		84A0355629E96759000B14D1 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		84BF686D29E7282500C5CCD4 /* NoNetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoNetworkView.swift; sourceTree = "<group>"; };
+		84C6339F29EAC1C3001177EA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		84C633A129EAE5A6001177EA /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		84C633A329EAFB2D001177EA /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,7 @@
 		841452EF29E5CF07006F4E2D /* FakeStore */ = {
 			isa = PBXGroup;
 			children = (
+				84C6339E29EAC1AB001177EA /* LoginView */,
 				841452F029E5CF07006F4E2D /* FakeStoreApp.swift */,
 				841452F229E5CF07006F4E2D /* ContentView.swift */,
 				84AA03AF29E9B94E00B5E6A1 /* Store View */,
@@ -78,6 +85,7 @@
 				84BF686D29E7282500C5CCD4 /* NoNetworkView.swift */,
 				84A0355429E961C0000B14D1 /* Product.swift */,
 				84A0355629E96759000B14D1 /* NetworkManager.swift */,
+				84C633A329EAFB2D001177EA /* Token.swift */,
 			);
 			path = FakeStore;
 			sourceTree = "<group>";
@@ -97,6 +105,15 @@
 				84A0355229E95FBC000B14D1 /* StoreViewModel.swift */,
 			);
 			path = "Store View";
+			sourceTree = "<group>";
+		};
+		84C6339E29EAC1AB001177EA /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				84C6339F29EAC1C3001177EA /* LoginView.swift */,
+				84C633A129EAE5A6001177EA /* LoginViewModel.swift */,
+			);
+			path = LoginView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,7 +194,10 @@
 				84BF686E29E7282500C5CCD4 /* NoNetworkView.swift in Sources */,
 				84947D6D29E5D61700052CF0 /* FSNetworkStatus.swift in Sources */,
 				841452FD29E5CF08006F4E2D /* FakeStore.xcdatamodeld in Sources */,
+				84C633A229EAE5A6001177EA /* LoginViewModel.swift in Sources */,
+				84C633A029EAC1C3001177EA /* LoginView.swift in Sources */,
 				84A0355129E95A29000B14D1 /* StoreView.swift in Sources */,
+				84C633A429EAFB2D001177EA /* Token.swift in Sources */,
 				841452F129E5CF07006F4E2D /* FakeStoreApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
