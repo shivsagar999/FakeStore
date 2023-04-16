@@ -73,9 +73,10 @@
 		841452EF29E5CF07006F4E2D /* FakeStore */ = {
 			isa = PBXGroup;
 			children = (
-				84C6339E29EAC1AB001177EA /* LoginView */,
 				841452F029E5CF07006F4E2D /* FakeStoreApp.swift */,
 				841452F229E5CF07006F4E2D /* ContentView.swift */,
+				84C5712A29EC7C3F00DAC0DC /* Models */,
+				84C6339E29EAC1AB001177EA /* LoginView */,
 				84AA03AF29E9B94E00B5E6A1 /* Store View */,
 				841452F429E5CF08006F4E2D /* Assets.xcassets */,
 				841452F929E5CF08006F4E2D /* Persistence.swift */,
@@ -83,9 +84,7 @@
 				841452F629E5CF08006F4E2D /* Preview Content */,
 				84947D6C29E5D61600052CF0 /* FSNetworkStatus.swift */,
 				84BF686D29E7282500C5CCD4 /* NoNetworkView.swift */,
-				84A0355429E961C0000B14D1 /* Product.swift */,
 				84A0355629E96759000B14D1 /* NetworkManager.swift */,
-				84C633A329EAFB2D001177EA /* Token.swift */,
 			);
 			path = FakeStore;
 			sourceTree = "<group>";
@@ -105,6 +104,15 @@
 				84A0355229E95FBC000B14D1 /* StoreViewModel.swift */,
 			);
 			path = "Store View";
+			sourceTree = "<group>";
+		};
+		84C5712A29EC7C3F00DAC0DC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				84A0355429E961C0000B14D1 /* Product.swift */,
+				84C633A329EAFB2D001177EA /* Token.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		84C6339E29EAC1AB001177EA /* LoginView */ = {
