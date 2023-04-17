@@ -110,7 +110,7 @@ class NetworkManager {
                     }
                     request.httpBody = serializedData
                 }
-        print(request.url)
+       
         let (data, response) = try await URLSession.shared.data(for: request)
         
         //Check if response is valid

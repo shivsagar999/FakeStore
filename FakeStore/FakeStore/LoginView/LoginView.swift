@@ -13,7 +13,7 @@ struct LoginView: View {
     @State var password: String = ""
     
     @State var storeScreen: Bool = false
-    
+    @State var invalidCredetialVisible: Bool = false
     @StateObject var loginViewModel = LoginViewModel()
     
     var body: some View {
@@ -34,18 +34,27 @@ struct LoginView: View {
                     .overlay(RoundedRectangle(cornerRadius: 16).stroke(Color.gray).padding(.bottom, -1).padding(.top, -1))
                     .padding()
 
-                TextField("Password", text: $password)
+                SecureField("Password", text: $password)
                     .padding()
                     .font(.callout)
                     .overlay(RoundedRectangle(cornerRadius: 16).stroke(Color.gray).padding(.bottom, -1).padding(.top, -1))
                     .padding()
+                if invalidCredetialVisible {
+                    Text("The username and password you entered is incorrect...❓")
+                        .foregroundColor(.red)
+                }
+                
                 
                 Button("Login") {
                     Task {
                         do {
+                            
                             try await loginViewModel.login(email: self.email, password: self.password)
+                            invalidCredetialVisible = false
                             storeScreen.toggle()
+                            
                         } catch {
+                            invalidCredetialVisible = true
                             print(error)
                         }
                     }
@@ -61,9 +70,6 @@ struct LoginView: View {
         .fullScreenCover(isPresented: $storeScreen) {
             StoreView()
         }
-        
-        
-        
         
         
         // MULTILINE TEXTFIELD WITH BORDERS
