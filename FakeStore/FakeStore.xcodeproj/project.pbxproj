@@ -14,6 +14,7 @@
 		841452FA29E5CF08006F4E2D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841452F929E5CF08006F4E2D /* Persistence.swift */; };
 		841452FD29E5CF08006F4E2D /* FakeStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 841452FB29E5CF08006F4E2D /* FakeStore.xcdatamodeld */; };
 		84947D6D29E5D61700052CF0 /* FSNetworkStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84947D6C29E5D61600052CF0 /* FSNetworkStatus.swift */; };
+		8499553A29EDBA450043413C /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499553929EDBA450043413C /* CreateAccountView.swift */; };
 		84A0355129E95A29000B14D1 /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0355029E95A29000B14D1 /* StoreView.swift */; };
 		84A0355329E95FBC000B14D1 /* StoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0355229E95FBC000B14D1 /* StoreViewModel.swift */; };
 		84A0355529E961C0000B14D1 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0355429E961C0000B14D1 /* Product.swift */; };
@@ -33,6 +34,7 @@
 		841452F929E5CF08006F4E2D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		841452FC29E5CF08006F4E2D /* FakeStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FakeStore.xcdatamodel; sourceTree = "<group>"; };
 		84947D6C29E5D61600052CF0 /* FSNetworkStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSNetworkStatus.swift; sourceTree = "<group>"; };
+		8499553929EDBA450043413C /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
 		84A0355029E95A29000B14D1 /* StoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreView.swift; sourceTree = "<group>"; };
 		84A0355229E95FBC000B14D1 /* StoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewModel.swift; sourceTree = "<group>"; };
 		84A0355429E961C0000B14D1 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				84947D6C29E5D61600052CF0 /* FSNetworkStatus.swift */,
 				84BF686D29E7282500C5CCD4 /* NoNetworkView.swift */,
 				84A0355629E96759000B14D1 /* NetworkManager.swift */,
+				8499553929EDBA450043413C /* CreateAccountView.swift */,
 			);
 			path = FakeStore;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				841452FD29E5CF08006F4E2D /* FakeStore.xcdatamodeld in Sources */,
 				84C633A229EAE5A6001177EA /* LoginViewModel.swift in Sources */,
 				84C633A029EAC1C3001177EA /* LoginView.swift in Sources */,
+				8499553A29EDBA450043413C /* CreateAccountView.swift in Sources */,
 				84A0355129E95A29000B14D1 /* StoreView.swift in Sources */,
 				84C633A429EAFB2D001177EA /* Token.swift in Sources */,
 				841452F129E5CF07006F4E2D /* FakeStoreApp.swift in Sources */,

@@ -18,7 +18,9 @@ struct LoginView: View {
     
     var body: some View {
         
-        VStack(spacing: 100) {
+        VStack() {
+            Spacer()
+            
             Text("FakeStore")
                 .foregroundColor(.orange)
                 .font(
@@ -27,7 +29,7 @@ struct LoginView: View {
                         fixedSize: 34)
                         .weight(.bold)
                     )
-            VStack() {
+
                 TextField("Email", text: $email)
                     .padding()
                     .font(.callout)
@@ -58,20 +60,23 @@ struct LoginView: View {
                             print(error)
                         }
                     }
-                    
                 }
                 .padding()
                 .overlay(RoundedRectangle(cornerRadius: 16).stroke(Color.gray).padding(.bottom, -1).padding(.top, -1))
                 .padding()
-            }
             
+   
+            Spacer()
+            
+            Button("Create Account") {
+                
+            }
         }
-        
+
         .fullScreenCover(isPresented: $storeScreen) {
             StoreView()
         }
-        
-        
+
         // MULTILINE TEXTFIELD WITH BORDERS
 //        TextField(
 //            "Enter First Name..",
@@ -90,8 +95,6 @@ struct LoginView: View {
 //        .overlay(RoundedRectangle(cornerRadius: 16).stroke(Color.gray).padding(.bottom, -10).padding(.top, -10))
 //        .padding()
 //
-        
-        
     }
 }
 
