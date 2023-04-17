@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import GoogleSignInSwift
 
 struct LoginView: View {
     
@@ -15,6 +16,8 @@ struct LoginView: View {
     @State var storeScreen: Bool = false
     @State var invalidCredetialVisible: Bool = false
     @StateObject var loginViewModel = LoginViewModel()
+    
+    @StateObject var authenticationViewModel: AuthenticationViewModel = AuthenticationViewModel()
     
     var body: some View {
         
@@ -65,6 +68,20 @@ struct LoginView: View {
                 .overlay(RoundedRectangle(cornerRadius: 16).stroke(Color.gray).padding(.bottom, -1).padding(.top, -1))
                 .padding()
             
+            
+            Button {
+                
+            } label: {
+                Text("Login With Google+")
+                    .frame(maxWidth: .infinity, maxHeight: 36)
+            }
+            .padding()
+            .buttonStyle(.bordered)
+            .tint(.red)
+            
+            
+            
+            
    
             Spacer()
             
@@ -75,6 +92,10 @@ struct LoginView: View {
 
         .fullScreenCover(isPresented: $storeScreen) {
             StoreView()
+        }
+        
+        .onAppear() {
+            
         }
 
         // MULTILINE TEXTFIELD WITH BORDERS
